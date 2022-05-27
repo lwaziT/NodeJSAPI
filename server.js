@@ -47,6 +47,8 @@ require("./app/routes/tutorial.route")
 
 const PORT = process.env.PORT || 8081;
 
+require("./app/routes/tutorial.route.js")(app);
+
 app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`);
     console.log('http://localhost:8081');
